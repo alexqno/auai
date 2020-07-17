@@ -7,9 +7,12 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
       },
-      type: {
+      status: {
         type: Sequelize.STRING,
         allowNull: false,
+      },
+      type: {
+        type: Sequelize.STRING,
       },
       protocol: {
         type: Sequelize.STRING,
@@ -17,8 +20,6 @@ module.exports = {
       },
       description: {
         type: Sequelize.TEXT,
-        allowNull: false,
-        unique: true,
       },
       user_id: {
         type: Sequelize.INTEGER,
